@@ -1,7 +1,40 @@
 .App {
 	text-align: center;
+}
 
-	button {
-		font-weight: bold;
-	}
+.brawlers {
+	position:absolute;
+	top: 2%;
+	left: 45%;
+}
+
+.sort{
+	position: absolute;
+	top: 1%;
+	left: 60%;
+}
+
+.tableStyle {
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	border: 2px solid black;
+	width: 200px;
+	margin: auto;
+}
+
+.headerStyle {
+	font-size: 25px;
+	border: 2px solid black;
+	background: antiquewhite;
+	text-align: center;
+	color: black;
+};
+
+.h1{
+	position:absolute;
+	top: 1%;
+	left: 50%;
+	font-weight: bolder;
+	font-size:large;
 }
