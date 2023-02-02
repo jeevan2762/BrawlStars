@@ -10,16 +10,16 @@
 
 .sort{
 	position: absolute;
-	top: 1%;
+	top: 5%;
 	left: 60%;
 }
 
 .tableStyle {
 	position: absolute;
-	top: 5%;
-	left: 10%;
+	top: 10%;
+	left: 20%;
 	border: 2px solid black;
-	width: 200px;
+	width: 300px;
 	margin: auto;
 }
 
@@ -37,4 +37,8 @@
 	left: 50%;
 	font-weight: bolder;
 	font-size:large;
+}
+
+.bodyStyle {
+	border: 2px solid black;
 }
