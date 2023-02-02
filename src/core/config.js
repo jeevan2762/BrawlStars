@@ -10,12 +10,12 @@ const config = {
 	],
 
 	sortBy: [
+		'leastTrophies',
+		'mostTrophies',
+		'powerLevel',
+		'closest to next rank',
 		'by rarity',
 		'by rarity descending',
-		'least trophies',
-		'most trophies',
-		'power level',
-		'closest to next rank',
 	],
 };
 
