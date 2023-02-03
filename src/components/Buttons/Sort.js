@@ -1,19 +1,24 @@
-/* eslint-disable max-lines-per-function */
 import React from 'react';
 import SortManager from '../../services/SortManager';
 
-const Sort = (context) => {
-	const { state, state: { indexValue, sortModes, characters },
-		setState, config: { sortBy }} = context;
+const type = {
+	'least Trophies': (context) =>
+		SortManager.sortByLeastTrophies(context),
+	'most Trophies': (context) =>
+		SortManager.sortByMostTrophies(context),
+	'power Level': (context) =>
+		SortManager.sortByPowerLevel(context),
+	'by Rarity': (context) =>
+		SortManager.sortByRarity(context),
+	'by Rarity Descending': (context) =>
+		SortManager.sortByRarityByDescending(context),
+	'closest To Next Rank': (context) =>
+		SortManager.sortByClosestToNextRank(context),
+};
 
-	const type = {
-		leastTrophies: (character) =>
-			SortManager.getLeastTrophies(character),
-		mostTrophies: (character) =>
-			SortManager.getMostTrophies(character),
-		powerLevel: (character) =>
-			SortManager.getPowerLevel(character),
-	};
+const Sort = (context) => {
+	const { state, state: { indexValue, sortModes },
+		setState, config: { sortBy }} = context;
 
 	return <div className="sort">
 		<button
@@ -21,7 +26,7 @@ const Sort = (context) => {
 				...state,
 				indexValue: indexValue + 1,
 				sortModes: sortBy[indexValue % sortBy.length],
-				characters: type[sortModes](characters),
+				characters: type[sortModes](context),
 			}) }
 		>{sortModes}</button>
 	</div>;

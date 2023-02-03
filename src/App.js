@@ -6,8 +6,8 @@ import brawlers from './services/data';
 
 const initialState = {
 	characters: brawlers,
-	indexValue: 0,
-	sortModes: 'leastTrophies',
+	indexValue: 1,
+	sortModes: 'least Trophies',
 };
 
 const App = (context) => {

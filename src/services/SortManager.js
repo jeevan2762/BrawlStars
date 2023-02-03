@@ -1,17 +1,32 @@
 
-const getLeastTrophies = (character) =>
-	character.sort((a, b) => a.trophies - b.trophies);
+const sortByLeastTrophies = ({ state: { characters }}) =>
+	characters.sort((a, b) => a.trophies - b.trophies);
 
-const getMostTrophies = (character) =>
-	character.sort((a, b) => b.trophies - a.trophies);
+const sortByMostTrophies = ({ state: { characters }}) =>
+	characters.sort((a, b) => b.trophies - a.trophies);
 
-const getPowerLevel = (character) =>
-	character.sort((a, b) => a.power - b.power);
+const sortByPowerLevel = ({ state: { characters }}) =>
+	characters.sort((a, b) => a.power - b.power);
+
+const sortByRarity = ({ state: { characters }, config: { rarityLevel }}) =>
+	characters.sort((a, b) => rarityLevel[a.rarity] - rarityLevel[b.rarity]);
+
+const sortByRarityByDescending = ({ state: { characters },
+	config: { rarityLevel }}) =>
+	characters.sort((a, b) => rarityLevel[b.rarity] - rarityLevel[a.rarity]);
+
+const sortByClosestToNextRank = ({ state: { characters },
+	config: { rankTrophies }}) =>
+	characters.sort((a, b) => (rankTrophies[a.rank] - a.trophies)
+		- (rankTrophies[b.rank] - b.trophies));
 
 const SortManager = {
-	getLeastTrophies,
-	getMostTrophies,
-	getPowerLevel,
+	sortByLeastTrophies,
+	sortByMostTrophies,
+	sortByPowerLevel,
+	sortByRarity,
+	sortByRarityByDescending,
+	sortByClosestToNextRank,
 };
 
 export default SortManager;
