@@ -1,4 +1,56 @@
 const config = {
+	brawlers: [
+		{
+			name: 'Barley',
+			rank: 2,
+			trophies: 18,
+			rarity: 'startingBrawler',
+			image: '/images/Barley.png',
+		},
+		{
+			name: 'Bo',
+			rank: 1,
+			trophies: 6,
+			rarity: 'mythic',
+			image: '/images/Bo.png',
+		},
+		{
+			name: 'Brock',
+			rank: 6,
+			trophies: 43,
+			rarity: 'rare',
+			image: '/images/Brock.png',
+		},
+		{
+			name: 'Colt',
+			rank: 3,
+			trophies: 25,
+			rarity: 'superRare',
+			image: '/images/Colt.png',
+		},
+		{
+			name: 'El Primo',
+			rank: 7,
+			trophies: 77,
+			rarity: 'legendary',
+			image: '/images/El primo.png',
+		},
+		{
+			name: 'Poco',
+			rank: 20,
+			trophies: 480,
+			rarity: 'chromatic',
+			image: '/images/Poco.jpeg',
+		},
+		{
+			name: 'Tara',
+			rank: 21,
+			trophies: 520,
+			rarity: 'chromatic',
+			image: '/images/Tara.png',
+		},
+	],
+
 	headers: [
 		'name',
 		'rank',

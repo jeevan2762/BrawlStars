@@ -61,7 +61,7 @@ const brawlers = [
 	},
 	{
 		name: 'Tara',
-		rank: 20,
+		rank: 19,
 		trophies: 520,
 		power: 25,
 		rarity: 'chromatic',

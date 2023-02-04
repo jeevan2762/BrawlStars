@@ -1,3 +1,11 @@
+const getCharacters = ({ config: { brawlers }}) =>
+	brawlers.map((brawler) => ({
+		...brawler,
+		power: 20,
+		brawlCoins: 1000,
+		coinsForUpgrade: 800,
+	}
+	));
 
 const sortByLeastTrophies = ({ state: { characters }}) =>
 	characters.sort((a, b) => a.trophies - b.trophies);
@@ -27,6 +35,7 @@ const SortManager = {
 	sortByRarity,
 	sortByRarityByDescending,
 	sortByClosestToNextRank,
+	getCharacters,
 };
 
 export default SortManager;
