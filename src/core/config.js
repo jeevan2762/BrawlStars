@@ -7,6 +7,7 @@ const config = {
 		'rarity',
 		'coinsForUpgrade',
 		'brawlCoins',
+		'image',
 	],
 
 	sortBy: [
