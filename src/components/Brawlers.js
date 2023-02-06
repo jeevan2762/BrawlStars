@@ -5,12 +5,10 @@ import CoinsSquare from './CoinsSquare';
 import Level from './Level';
 import Name from './Name';
 import Power from './Power';
-import Square from './Square';
 import Trophies from './Trophies';
 
 const Brawlers = (context) =>
-	<div>
-		<Square { ...context }/>
+	<div className="square">
 		<span>
 			<Level { ...context }/>
 			<Trophies { ...context }/>

@@ -6,6 +6,7 @@ const CoinsSquare = (context) =>
 	<div className="coinsSquare">
 		<BrawlCoins { ...context }/>
 		<PowerCoins { ...context }/>
+		<label className="plus">+</label>
 	</div>;
 
 export default CoinsSquare;
