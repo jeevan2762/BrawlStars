@@ -1,3 +1,4 @@
+/* eslint-disable no-magic-numbers */
 /* eslint-disable max-lines-per-function */
 import React from 'react';
 import BgImage from './BgImage';
@@ -7,8 +8,25 @@ import Name from './Name';
 import Power from './Power';
 import Trophies from './Trophies';
 
+const multiplier = 200;
+const margin = 50;
+
+const style = (context) => {
+	const { data: { key }, config: { size }} = context;
+
+	return {
+		top: 50 * size,
+		left: ((key * multiplier) + margin) * size,
+		width: 150 * size,
+		height: 150 * size,
+	};
+};
+
 const Brawlers = (context) =>
-	<div className="square">
+	<div
+		className="square"
+		style={ style(context) }
+	>
 		<span>
 			<Level { ...context }/>
 			<Trophies { ...context }/>

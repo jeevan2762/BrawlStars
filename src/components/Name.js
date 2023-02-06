@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Name = ({ state: { character }}) =>
+const Name = ({ data: { character }}) =>
 	<label className="name">{character.name}</label>;
 
 export default Name;

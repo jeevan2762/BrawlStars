@@ -4,8 +4,8 @@ import PowerCoins from './PowerCoins';
 
 const CoinsSquare = (context) =>
 	<div className="coinsSquare">
-		<BrawlCoins { ...context }/>
 		<PowerCoins { ...context }/>
+		<BrawlCoins { ...context }/>
 		<label className="plus">+</label>
 	</div>;
 

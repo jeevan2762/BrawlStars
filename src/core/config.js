@@ -36,13 +36,6 @@ const config = {
 			image: '/images/El primo.png',
 		},
 		{
-			name: 'Poco',
-			rank: 20,
-			trophies: 480,
-			rarity: 'chromatic',
-			image: '/images/Poco.jpeg',
-		},
-		{
 			name: 'Tara',
 			rank: 21,
 			trophies: 520,
@@ -50,7 +43,7 @@ const config = {
 			image: '/images/Tara.png',
 		},
 	],
-
+	size: 2,
 	headers: [
 		'name',
 		'rank',

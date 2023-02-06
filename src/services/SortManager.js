@@ -1,9 +1,12 @@
+/* eslint-disable no-magic-numbers */
+import { rndBetween } from '@laufire/utils/lib';
+
 const getCharacters = ({ config: { brawlers }}) =>
 	brawlers.map((brawler) => ({
 		...brawler,
-		power: 20,
-		brawlCoins: 1000,
-		coinsForUpgrade: 800,
+		power: rndBetween(1, 10),
+		powerCoins: rndBetween(100, 750),
+		brawlCoins: rndBetween(100, 1000),
 	}
 	));
 

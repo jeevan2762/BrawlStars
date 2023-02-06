@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BgImage = ({ state: { character }}) =>
+const BgImage = ({ data: { character }}) =>
 	<label className="bgImg">
 		<img
 			src={ character.image }

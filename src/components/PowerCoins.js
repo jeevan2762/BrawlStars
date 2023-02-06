@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PowerCoins = ({ state: { character }}) =>
+const PowerCoins = ({ data: { character }}) =>
 	<div className="powerCoins">
 		<img
 			src="/images/PowerCoins.jpg"
@@ -8,7 +8,7 @@ const PowerCoins = ({ state: { character }}) =>
 			height="50px"
 			width="50px"
 		/>
-		<label className="powerCoinCount">{character.coinsForUpgrade}</label>
+		<label className="powerCoinCount">{character.powerCoins}</label>
 	</div>;
 
 export default PowerCoins;
