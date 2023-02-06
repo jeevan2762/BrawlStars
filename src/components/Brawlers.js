@@ -1,12 +1,8 @@
 /* eslint-disable no-magic-numbers */
-/* eslint-disable max-lines-per-function */
 import React from 'react';
-import BgImage from './BgImage';
-import CoinsSquare from './CoinsSquare';
-import Level from './Level';
-import Name from './Name';
-import Power from './Power';
-import Trophies from './Trophies';
+import Body from './Body/Index';
+import Header from './Header/Index';
+import Footer from './Footer/Index';
 
 const multiplier = 200;
 const margin = 50;
@@ -27,22 +23,9 @@ const Brawlers = (context) =>
 		className="square"
 		style={ style(context) }
 	>
-		<span>
-			<Level { ...context }/>
-			<Trophies { ...context }/>
-		</span>
-		<div>
-			<BgImage { ...context }/>
-		</div>
-		<div>
-			<Name { ...context }/>
-			<span>
-				<Power { ...context }/>
-			</span>
-		</div>
-		<div>
-			<CoinsSquare { ...context }/>
-		</div>
+		<Header { ...context }/>
+		<Body { ...context }/>
+		<Footer { ...context }/>
 	</div>;
 
 export default Brawlers;
