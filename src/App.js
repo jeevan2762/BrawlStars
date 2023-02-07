@@ -3,10 +3,10 @@ import './App.scss';
 import Brawler from './components/Brawler';
 import Sort from './components/Buttons/Sort';
 import PageHeading from './components/PageHeading';
-import SortManager from './services/SortManager';
+import CharacterManager from './services/CharacterManager';
 
 const initialState = (context) => ({
-	characters: SortManager.getCharacters(context),
+	characters: CharacterManager.getCharacters(context),
 	indexValue: 1,
 	sortModes: 'least Trophies',
 });

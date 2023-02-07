@@ -5,8 +5,8 @@ const BgImage = ({ data: { character }}) =>
 		<img
 			src={ character.image }
 			alt="img"
-			width="50%"
-			height="40%"
+			width="150px"
+			height="150px"
 		/>
 	</label>;
 
