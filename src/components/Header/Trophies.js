@@ -5,8 +5,8 @@ const Trophies = ({ data: { character }}) =>
 		<img
 			src="/images/trophy2.jpg"
 			alt="coin"
-			height="35px"
-			width="35px"
+			height="20%"
+			width="20%"
 		/>
 		<label className="trophies">{character.trophies}</label>
 	</div>;

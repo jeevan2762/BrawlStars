@@ -1,13 +1,6 @@
 const config = {
 	brawlers: [
 		{
-			name: 'Barley',
-			rank: 2,
-			trophies: 18,
-			rarity: 'startingBrawler',
-			image: '/images/Barley.png',
-		},
-		{
 			name: 'Bo',
 			rank: 1,
 			trophies: 6,

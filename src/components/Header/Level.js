@@ -7,8 +7,8 @@ const Level = ({ data: { character }}) =>
 			style={ { borderRadius: '170%' } }
 			src="/images/Rank.png"
 			alt="rank img"
-			height="40px"
-			width="40px"
+			height="13%"
+			width="13%"
 		/>
 	</div>;
 

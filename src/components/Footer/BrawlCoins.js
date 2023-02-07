@@ -6,8 +6,8 @@ const BrawlCoins = ({ data: { character }}) =>
 			style={ { borderRadius: '60%' } }
 			src="/images/BrawlCoins.png"
 			alt="Coin img"
-			height="50px"
-			width="50px"
+			height="100%"
+			width="100%"
 		/>
 		<label className="brawlCoinCount">{character.brawlCoins}</label>
 	</div>;

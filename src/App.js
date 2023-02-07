@@ -9,16 +9,6 @@ const initialState = (context) => ({
 	characters: SortManager.getCharacters(context),
 	indexValue: 1,
 	sortModes: 'least Trophies',
-	character: {
-		name: 'Brock',
-		rank: 2,
-		trophies: 18,
-		rarity: 'startingBrawler',
-		image: '/images/Brock.png',
-		power: 20,
-		brawlCoins: 1000,
-		coinsForUpgrade: 800,
-	},
 });
 
 const App = (context) => {

@@ -6,8 +6,8 @@ const PowerCoins = ({ data: { character }}) =>
 			style={ { borderRadius: '50%' } }
 			src="/images/PowerCoins.jpg"
 			alt="Coin img"
-			height="50px"
-			width="50px"
+			height="100%"
+			width="100%"
 		/>
 		<label className="powerCoinCount">{character.powerCoins}</label>
 	</div>;

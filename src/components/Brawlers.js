@@ -4,7 +4,7 @@ import Body from './Body/Index';
 import Header from './Header/Index';
 import Footer from './Footer/Index';
 
-const multiplier = 200;
+const multiplier = 150;
 const margin = 50;
 
 const style = (context) => {
@@ -13,8 +13,8 @@ const style = (context) => {
 	return {
 		top: 50 * size,
 		left: ((key * multiplier) + margin) * size,
-		width: 150 * size,
-		height: 150 * size,
+		width: 120 * size,
+		height: 80 * size,
 	};
 };
 
