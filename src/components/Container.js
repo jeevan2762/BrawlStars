@@ -1,7 +1,7 @@
 import React from 'react';
 import Brawlers from './Brawlers';
 
-const Brawler = (context) => {
+const Container = (context) => {
 	const { state: { characters }} = context;
 
 	return <div>
@@ -13,4 +13,4 @@ const Brawler = (context) => {
 	</div>;
 };
 
-export default Brawler;
+export default Container;
