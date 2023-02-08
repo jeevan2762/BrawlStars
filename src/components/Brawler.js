@@ -4,7 +4,7 @@ import Header from './Header/Index';
 import Footer from './Footer/Index';
 import CharacterManager from '../services/CharacterManager';
 
-const Brawlers = (context) =>
+const Brawler = (context) =>
 	<div
 		className="square"
 		style={ CharacterManager.getSquare(context) }
@@ -14,4 +14,4 @@ const Brawlers = (context) =>
 		<Footer { ...context }/>
 	</div>;
 
-export default Brawlers;
+export default Brawler;
