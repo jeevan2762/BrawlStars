@@ -34,8 +34,8 @@ const config = {
 		},
 		{
 			name: 'Tara',
-			rank: 21,
-			trophies: 520,
+			rank: 9,
+			trophies: 122,
 			rarity: 'chromatic',
 			image: '/images/Tara.png',
 		},

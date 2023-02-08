@@ -4,8 +4,7 @@ const Level = ({ data: { character }}) =>
 	<div className="rankImg">
 		<span className="rank">{character.rank}</span>
 		<img
-			style={ { borderRadius: '170%' } }
-			src="/images/Rank.png"
+			src="/images/Rank2.png"
 			alt="rank img"
 			height="13%"
 			width="13%"
