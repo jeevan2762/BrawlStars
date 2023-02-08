@@ -2,8 +2,8 @@ import React from 'react';
 
 const Power = ({ data: { character }}) =>
 	<div>
-		<label className="power">Power  </label>
-		<label className="powerValue">{character.power}</label>
+		<span className="power">Power  </span>
+		<span className="powerValue">{character.power}</span>
 	</div>;
 
 export default Power;

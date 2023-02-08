@@ -1,8 +1,8 @@
 import { React, useState } from 'react';
 import './App.scss';
-import Brawler from './components/Brawler';
+import Container from './components/Container';
 import Sort from './components/Buttons/Sort';
-import PageHeading from './components/PageHeading';
+import PageHeading from './components/Table/PageHeading';
 import CharacterManager from './services/CharacterManager';
 
 const initialState = (context) => ({
@@ -18,7 +18,7 @@ const App = (context) => {
 	return <div className="App">
 		<Sort { ...extendedContext }/>
 		<PageHeading { ...extendedContext }/>
-		<Brawler { ...extendedContext }/>
+		<Container { ...extendedContext }/>
 	</div>;
 };
 

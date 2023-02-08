@@ -10,8 +10,22 @@ const getCharacters = ({ config: { brawlers }}) =>
 	}
 	));
 
+const getSquare = (context) => {
+	const { data: { key },
+		config: { size, topMultiplier, topMargin, multiplier, margin }}
+		= context;
+
+	return {
+		top: (Math.floor(key / 3) * topMultiplier) + topMargin,
+		left: (((key % 3) * multiplier) + margin) * size,
+		width: 120 * size,
+		height: 80 * size,
+	};
+};
+
 const CharacterManager = {
 	getCharacters,
+	getSquare,
 };
 
 export default CharacterManager;

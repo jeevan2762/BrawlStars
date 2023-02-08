@@ -6,7 +6,7 @@ const CoinsSquare = (context) =>
 	<div className="coinsSquare">
 		<PowerCoins { ...context }/>
 		<BrawlCoins { ...context }/>
-		<label className="plus">+</label>
+		<span className="plus">+</span>
 	</div>;
 
 export default CoinsSquare;

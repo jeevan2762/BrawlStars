@@ -1,4 +1,8 @@
 const config = {
+	multiplier: 200,
+	margin: 50,
+	topMargin: 110,
+	topMultiplier: 270,
 	brawlers: [
 		{
 			name: 'Bo',

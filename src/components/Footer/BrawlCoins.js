@@ -9,7 +9,7 @@ const BrawlCoins = ({ data: { character }}) =>
 			height="100%"
 			width="100%"
 		/>
-		<label className="brawlCoinCount">{character.brawlCoins}</label>
+		<span className="brawlCoinCount">{character.brawlCoins}</span>
 	</div>;
 
 export default BrawlCoins;

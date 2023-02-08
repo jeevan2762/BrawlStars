@@ -8,7 +8,7 @@ const Trophies = ({ data: { character }}) =>
 			height="20%"
 			width="20%"
 		/>
-		<label className="trophies">{character.trophies}</label>
+		<span className="trophies">{character.trophies}</span>
 	</div>;
 
 export default Trophies;

@@ -9,7 +9,7 @@ const PowerCoins = ({ data: { character }}) =>
 			height="100%"
 			width="100%"
 		/>
-		<label className="powerCoinCount">{character.powerCoins}</label>
+		<span className="powerCoinCount">{character.powerCoins}</span>
 	</div>;
 
 export default PowerCoins;

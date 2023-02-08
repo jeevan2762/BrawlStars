@@ -1,6 +1,6 @@
 import React from 'react';
 
 const Name = ({ data: { character }}) =>
-	<label className="name">{character.name}</label>;
+	<span className="name">{character.name}</span>;
 
 export default Name;
