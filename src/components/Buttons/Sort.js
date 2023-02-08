@@ -24,7 +24,7 @@ const Sort = (context) => {
 		<button
 			onClick={ () => setState({
 				...state,
-				indexValue: indexValue + 1,
+				buttonIndex: indexValue + 1,
 				sortModes: sortBy[indexValue % sortBy.length],
 				characters: type[sortModes](context),
 			}) }

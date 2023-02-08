@@ -7,7 +7,7 @@ import CharacterManager from './services/CharacterManager';
 
 const initialState = (context) => ({
 	characters: CharacterManager.getCharacters(context),
-	indexValue: 1,
+	buttonIndex: 1,
 	sortModes: 'least Trophies',
 });
 
