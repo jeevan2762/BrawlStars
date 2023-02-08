@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BgImage = ({ data: { character }}) =>
+const CharacterImage = ({ data: { character }}) =>
 	<span className="bgImg">
 		<img
 			src={ character.image }
@@ -10,4 +10,4 @@ const BgImage = ({ data: { character }}) =>
 		/>
 	</span>;
 
-export default BgImage;
+export default CharacterImage;

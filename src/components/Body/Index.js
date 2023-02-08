@@ -1,11 +1,11 @@
 import React from 'react';
-import BgImage from './BgImage';
+import CharacterImage from './CharacterImage';
 import Name from './Name';
 import Power from './Power';
 
 const Body = (context) => <div>
 	<div>
-		<BgImage { ...context }/>
+		<CharacterImage { ...context }/>
 	</div>
 	<div>
 		<Name { ...context }/>
