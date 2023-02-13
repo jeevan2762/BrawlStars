@@ -23,9 +23,20 @@ const getSquare = (context) => {
 	};
 };
 
+const getPowerUpgrade = (context) => {
+	const { setState } = context;
+
+	return setInterval(() => setState((state) =>
+		({
+			...state,
+			powerUpgrade: !state.powerUpgrade,
+		})), 1000);
+};
+
 const CharacterManager = {
 	getCharacters,
 	getSquare,
+	getPowerUpgrade,
 };
 
 export default CharacterManager;

@@ -9,11 +9,15 @@ const initialState = (context) => ({
 	characters: CharacterManager.getCharacters(context),
 	buttonIndex: 1,
 	sortModes: 'least Trophies',
+	powerUpgrade: false,
 });
 
 const App = (context) => {
 	const [state, setState] = useState(initialState(context));
 	const extendedContext = { ...context, state, setState };
+	const { once } = context;
+
+	once(() => CharacterManager.getPowerUpgrade(extendedContext));
 
 	return <div className="App">
 		<Sort { ...extendedContext }/>
