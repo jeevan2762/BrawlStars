@@ -17,15 +17,15 @@ const type = {
 };
 
 const Sort = (context) => {
-	const { state, state: { indexValue, sortModes },
+	const { state, state: { buttonIndex, sortModes },
 		setState, config: { sortBy }} = context;
 
 	return <div className="sort">
 		<button
 			onClick={ () => setState({
 				...state,
-				buttonIndex: indexValue + 1,
-				sortModes: sortBy[indexValue % sortBy.length],
+				buttonIndex: buttonIndex + 1,
+				sortModes: sortBy[buttonIndex % sortBy.length],
 				characters: type[sortModes](context),
 			}) }
 		>{sortModes}</button>
