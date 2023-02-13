@@ -63,8 +63,8 @@
 
 .trophies{
 	position: absolute;
-	top: 17%;
-	left: 62%;
+	top: -14%;
+	left: 49%;
 	font-size: large;
 }
 
@@ -136,12 +136,34 @@
 
 .trophy{
 	position: absolute;
-	top: -20%;
-	left: 20%;
+	top: -14%;
+	left: 35%;
 }
 
 .rankImg{
 	position: absolute;
 	top: -15%;
 	left: -40%;
+}
+
+.trophyBar{
+	position: absolute;
+	top: -15%;
+	left: 9%;
+	height: 12%;
+	width: 80%;
+	border: 2px solid;
+}
+
+.trophyImg{
+	position: absolute;
+	top: -18%;
+	left: 10%;
+}
+
+.bar{
+	position: absolute;
+	height:100%;
+	left: 0%;
+	background-color: red;
 }
