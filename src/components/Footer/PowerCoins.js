@@ -1,9 +1,8 @@
 import React from 'react';
 
 const PowerCoins = ({ data: { character }}) =>
-	<div className="powerCoins">
+	<div>
 		<img
-			style={ { borderRadius: '50%' } }
 			src="/images/PowerCoins.jpg"
 			alt="Coin img"
 			height="100%"

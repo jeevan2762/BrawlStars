@@ -1,6 +1,6 @@
 .App {
 	text-align: center;
-	background-image: url(https://i.pinimg.com/originals/5d/4b/b2/5d4bb2fc575967116e9f8015bd82b9e6.jpg) ;
+	background-image: url(https://i.redd.it/rmmz9vnwvd031.jpg) ;
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 100vh;
@@ -39,9 +39,7 @@
 .h1{
 	position:absolute;
 	top: 1%;
-	left: 50%;
-	font-weight: bolder;
-	font-size:large;
+	left: 40%;
 }
 
 .bodyStyle {
@@ -59,6 +57,8 @@
 	top: 19%;
 	left: 48%;
 	font-size: large;
+	font-weight: bolder;
+	color: white;
 }
 
 .trophies{
@@ -66,6 +66,8 @@
 	top: -14%;
 	left: 49%;
 	font-size: large;
+	font-weight: bolder;
+	color: goldenrod;
 }
 
 .bgImg{
@@ -79,6 +81,8 @@
 	top: 88%;
 	left: 2%;
 	font-size: large;
+	font-weight: bolder;
+	color: black;
 }
 
 .power{
@@ -88,6 +92,14 @@
 	font-size: large;
 	height: 5%;
 	width: 5%;
+	font-weight: bolder;
+	color: black;
+}
+
+.upgradeImg{
+	position: absolute;
+	top: 86%;
+	left: 57%;
 }
 
 .powerValue{
@@ -118,12 +130,16 @@
 	position: absolute;
 	top: 35%;
 	font-size: large;
+	font-weight: bolder;
+	color: white;
 }
 
 .powerCoinCount{
 	position: absolute;
 	top: 35%;
 	font-size: large;
+	font-weight: bolder;
+	color: white;
 }
 
 .plus{
@@ -166,4 +182,18 @@
 	height:100%;
 	left: 0%;
 	background-color: red;
+}
+
+.backImg{
+	position: absolute;
+	top: 0%;
+	left: 10%;
+	color: gray;
+}
+
+.homeImg{
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	background-color: gray;
 }
