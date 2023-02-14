@@ -20,7 +20,7 @@ const Sort = (context) => {
 	const { state, state: { buttonIndex, sortModes },
 		setState, config: { sortBy }} = context;
 
-	return <div className="sort">
+	return <div>
 		<button
 			onClick={ () => setState({
 				...state,

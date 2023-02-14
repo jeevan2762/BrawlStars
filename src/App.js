@@ -1,7 +1,6 @@
 import { React, useState } from 'react';
 import './App.scss';
 import Container from './components/Container';
-import Sort from './components/Buttons/Sort';
 import PageHeading from './components/PageHeading';
 import CharacterManager from './services/CharacterManager';
 
@@ -20,7 +19,6 @@ const App = (context) => {
 	once(() => CharacterManager.getPowerUpgrade(extendedContext));
 
 	return <div className="App">
-		<Sort { ...extendedContext }/>
 		<PageHeading { ...extendedContext }/>
 		<Container { ...extendedContext }/>
 	</div>;
