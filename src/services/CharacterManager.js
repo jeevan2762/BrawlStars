@@ -10,19 +10,6 @@ const getCharacters = ({ config: { brawlers }}) =>
 	}
 	));
 
-const getSquare = (context) => {
-	const { data: { key },
-		config: { size, topMultiplier, topMargin, multiplier, margin }}
-		= context;
-
-	return {
-		top: (Math.floor(key / 3) * topMultiplier) + topMargin,
-		left: (((key % 3) * multiplier) + margin) * size,
-		width: 120 * size,
-		height: 80 * size,
-	};
-};
-
 const getPowerUpgrade = (context) => {
 	const { setState } = context;
 
@@ -35,7 +22,6 @@ const getPowerUpgrade = (context) => {
 
 const CharacterManager = {
 	getCharacters,
-	getSquare,
 	getPowerUpgrade,
 };
 
