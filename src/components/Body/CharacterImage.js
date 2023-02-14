@@ -5,7 +5,7 @@ const CharacterImage = ({ data: { character }}) =>
 		<img
 			src={ character.image }
 			alt="img"
-			width="150px"
+			width="180px"
 			height="150px"
 		/>
 	</span>;

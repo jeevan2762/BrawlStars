@@ -5,6 +5,17 @@
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 800px;
+	height: 600px;
+	justify-content: space-between;
 }
 
 .brawlers {
@@ -47,9 +58,12 @@
 }
 
 .square {
-	position: absolute;
+	position: relative;
 	border: 2px solid black;
-	background-color: lightblue;
+	background-color: white;
+	top: 100px;
+	height: 150px;
+	width: 200px;
 }
 
 .rank{
@@ -61,6 +75,12 @@
 	color: white;
 }
 
+.rankImg{
+	position: absolute;
+	top: -17%;
+	left: -50%;
+}
+
 .trophies{
 	position: absolute;
 	top: -14%;
@@ -70,10 +90,39 @@
 	color: goldenrod;
 }
 
+.trophy{
+	position: absolute;
+	top: -14%;
+	left: 35%;
+}
+
+.trophyBar{
+	position: absolute;
+	top: -15%;
+	left: 9%;
+	height: 12%;
+	width: 80%;
+	border: 2px solid;
+}
+
+.trophyImg{
+	position: absolute;
+	top: -18%;
+	left: 10%;
+}
+
+.bar{
+	position: absolute;
+	height:100%;
+	left: 0%;
+	background-color: red;
+}
+
 .bgImg{
 	position: absolute;
-	top: 5%;
-	left: 10%;
+	top: 0%;
+	left: 0%;
+	width: 100px;
 }
 
 .name{
@@ -88,7 +137,7 @@
 .power{
 	position: absolute;
 	top: 88%;
-	left: 67%;
+	left: 63%;
 	font-size: large;
 	height: 5%;
 	width: 5%;
@@ -96,22 +145,22 @@
 	color: black;
 }
 
-.upgradeImg{
+.powerValue{
 	position: absolute;
-	top: 85%;
-	left: 57%;
+	top: 88%;
+	left: 91%;
+	font-size: large;
+	font-weight: bolder;
+	height: 13%;
+	width: 10%;
+	background-color: black;
+	color: white;
 }
 
-.powerValue{
-		position: absolute;
-		top: 88%;
-		left: 91%;
-		font-size: large;
-		font-weight: bolder;
-		height: 13%;
-		width: 10%;
-		background-color: black;
-		color: white;
+.upgradeImg{
+	position: absolute;
+	top: 83%;
+	left: 50%;
 }
 
 .coinsSquare{
@@ -148,54 +197,6 @@
 	font-size: 25px;
 	color: white;
 	left: 52%;
-}
-
-.trophy{
-	position: absolute;
-	top: -14%;
-	left: 35%;
-}
-
-.rankImg{
-	position: absolute;
-	top: -15%;
-	left: -40%;
-}
-
-.trophyBar{
-	position: absolute;
-	top: -15%;
-	left: 9%;
-	height: 12%;
-	width: 80%;
-	border: 2px solid;
-}
-
-.trophyImg{
-	position: absolute;
-	top: -18%;
-	left: 10%;
-}
-
-.bar{
-	position: absolute;
-	height:100%;
-	left: 0%;
-	background-color: red;
-}
-
-.backImg{
-	position: absolute;
-	top: 0%;
-	left: 10%;
-	color: gray;
-}
-
-.homeImg{
-	position: absolute;
-	top: 10%;
-	left: 0%;
-	background-color: gray;
 }
 
 .upgradeTop{
