@@ -2,14 +2,15 @@ import React from 'react';
 import Body from './Body/Index';
 import Header from './Header/Index';
 import Footer from './Footer/Index';
+import { Box } from '@mui/material';
 
 const Brawler = (context) =>
-	<div
+	<Box
 		className="square"
 	>
 		<Body { ...context }/>
 		<Header { ...context }/>
 		<Footer { ...context }/>
-	</div>;
+	</Box>;
 
 export default Brawler;

@@ -1,7 +1,8 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 const PowerCoins = ({ data: { character }}) =>
-	<div>
+	<Box>
 		<img
 			src="/images/PowerCoins.jpg"
 			alt="Coin img"
@@ -9,6 +10,6 @@ const PowerCoins = ({ data: { character }}) =>
 			width="100%"
 		/>
 		<span className="powerCoinCount">{character.powerCoins}</span>
-	</div>;
+	</Box>;
 
 export default PowerCoins;

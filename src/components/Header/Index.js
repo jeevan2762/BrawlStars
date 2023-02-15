@@ -1,13 +1,14 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import Level from './Level';
 import Trophies from './Trophies';
 
 const Header = (context) =>
-	<div>
+	<Box>
 		<span>
 			<Level { ...context }/>
 			<Trophies { ...context }/>
 		</span>
-	</div>;
+	</Box>;
 
 export default Header;

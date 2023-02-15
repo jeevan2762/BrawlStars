@@ -1,10 +1,11 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import TrophyBar from './TrophyBar';
 
 const Trophies = (context) => {
 	const { data: { character }} = context;
 
-	return <div>
+	return <Box>
 		<TrophyBar { ...context }/>
 		<img
 			className="trophy"
@@ -14,7 +15,7 @@ const Trophies = (context) => {
 			width="12%"
 		/>
 		<span className="trophies">{character.trophies}</span>
-	</div>;
+	</Box>;
 };
 
 export default Trophies;

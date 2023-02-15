@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import { React, useState } from 'react';
 import './App.scss';
 import Container from './components/Container';
@@ -18,10 +19,10 @@ const App = (context) => {
 
 	once(() => CharacterManager.getPowerUpgrade(extendedContext));
 
-	return <div className="App">
+	return <Box className="App">
 		<PageHeading { ...extendedContext }/>
 		<Container { ...extendedContext }/>
-	</div>;
+	</Box>;
 };
 
 export default App;

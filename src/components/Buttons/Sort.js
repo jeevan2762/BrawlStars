@@ -1,3 +1,4 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import SortManager from '../../services/SortManager';
 
@@ -20,7 +21,7 @@ const Sort = (context) => {
 	const { state, state: { buttonIndex, sortModes },
 		setState, config: { sortBy }} = context;
 
-	return <div>
+	return <Box>
 		<button
 			onClick={ () => setState({
 				...state,
@@ -29,7 +30,7 @@ const Sort = (context) => {
 				characters: type[sortModes](context),
 			}) }
 		>{sortModes}</button>
-	</div>;
+	</Box>;
 };
 
 export default Sort;

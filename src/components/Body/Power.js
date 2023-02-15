@@ -1,7 +1,8 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 const Power = ({ data: { character }, state: { powerUpgrade }}) =>
-	<div>
+	<Box>
 		<span className="upgradeImg">
 			<img
 				className={ powerUpgrade ? 'upgradeTop' : 'upgradeBottom' }
@@ -13,6 +14,6 @@ const Power = ({ data: { character }, state: { powerUpgrade }}) =>
 		</span>
 		<span className="power">Power  </span>
 		<span className="powerValue">{character.power}</span>
-	</div>;
+	</Box>;
 
 export default Power;

@@ -1,18 +1,19 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import CharacterImage from './CharacterImage';
 import Name from './Name';
 import Power from './Power';
 
-const Body = (context) => <div>
-	<div>
+const Body = (context) => <Box>
+	<Box>
 		<CharacterImage { ...context }/>
-	</div>
-	<div>
+	</Box>
+	<Box>
 		<Name { ...context }/>
 		<span>
 			<Power { ...context }/>
 		</span>
-	</div>
-</div>;
+	</Box>
+</Box>;
 
 export default Body;

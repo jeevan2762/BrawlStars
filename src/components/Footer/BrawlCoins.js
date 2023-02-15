@@ -1,7 +1,8 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 const BrawlCoins = ({ data: { character }}) =>
-	<div>
+	<Box>
 		<img
 			src="/images/BrawlCoins.png"
 			alt="Coin img"
@@ -9,6 +10,6 @@ const BrawlCoins = ({ data: { character }}) =>
 			width="100%"
 		/>
 		<span className="brawlCoinCount">{character.brawlCoins}</span>
-	</div>;
+	</Box>;
 
 export default BrawlCoins;

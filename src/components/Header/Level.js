@@ -1,7 +1,8 @@
+import { Box } from '@mui/material';
 import React from 'react';
 
 const Level = ({ data: { character }}) =>
-	<div className="rankImg">
+	<Box className="rankImg">
 		<span className="rank">{character.rank}</span>
 		<img
 			src="/images/Rank2.png"
@@ -9,6 +10,6 @@ const Level = ({ data: { character }}) =>
 			height="13%"
 			width="13%"
 		/>
-	</div>;
+	</Box>;
 
 export default Level;

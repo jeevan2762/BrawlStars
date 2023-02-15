@@ -1,12 +1,13 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import BrawlCoins from './BrawlCoins';
 import PowerCoins from './PowerCoins';
 
 const CoinsSquare = (context) =>
-	<div className="coinsSquare">
+	<Box className="coinsSquare">
 		<PowerCoins { ...context }/>
 		<BrawlCoins { ...context }/>
 		<span className="plus">+</span>
-	</div>;
+	</Box>;
 
 export default CoinsSquare;
