@@ -1,8 +1,4 @@
 const config = {
-	multiplier: 200,
-	margin: 50,
-	topMargin: 110,
-	topMultiplier: 270,
 	brawlers: [
 		{
 			name: 'Bo',
@@ -47,7 +43,6 @@ const config = {
 			image: '/images/Tara.png',
 		},
 	],
-	size: 2,
 	headers: [
 		'name',
 		'rank',
