@@ -16,7 +16,7 @@ const getPowerUpgrade = (context) => {
 	return setInterval(() => setState((state) =>
 		({
 			...state,
-			powerUpgrade: !state.powerUpgrade,
+			moveUpgradeIcon: !state.moveUpgradeIcon,
 		})), 1000);
 };
 

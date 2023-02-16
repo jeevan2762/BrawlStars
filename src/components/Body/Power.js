@@ -1,11 +1,11 @@
 import { Box } from '@mui/material';
 import React from 'react';
 
-const Power = ({ data: { character }, state: { powerUpgrade }}) =>
+const Power = ({ data: { character }, state: { moveUpgradeIcon }}) =>
 	<Box>
 		<span className="upgradeImg">
 			<img
-				className={ powerUpgrade ? 'upgradeTop' : 'upgradeBottom' }
+				className={ moveUpgradeIcon ? 'moveTop' : 'moveBottom' }
 				src="/images/Upgrade.png"
 				alt="img"
 				width="25px"

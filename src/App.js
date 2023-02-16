@@ -9,7 +9,7 @@ const initialState = (context) => ({
 	characters: CharacterManager.getCharacters(context),
 	buttonIndex: 1,
 	sortModes: 'least Trophies',
-	powerUpgrade: false,
+	moveUpgradeIcon: false,
 });
 
 const App = (context) => {
