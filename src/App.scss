@@ -3,7 +3,7 @@
 	background-image: url(https://i.redd.it/rmmz9vnwvd031.jpg) ;
 	background-repeat: no-repeat;
 	width: 100vw;
-	height: 106vh;
+	height: 100vh;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -13,9 +13,11 @@
 .container{
 	display: flex;
 	flex-wrap: wrap;
-	width: 800px;
-	height: 600px;
+	width: 60%;
+	height: 500px;
+	overflow: auto;
 	justify-content: space-between;
+	background-color: purple;
 }
 
 .brawlers {
