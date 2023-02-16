@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
 import React from 'react';
-import CoinsSquare from './CoinsSquare';
+import CoinsBox from './CoinsBox';
 
 const Footer = (context) => <Box>
-	<CoinsSquare { ...context }/>
+	<CoinsBox { ...context }/>
 </Box>;
 
 export default Footer;

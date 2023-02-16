@@ -121,7 +121,8 @@
 	left: 2%;
 	font-size: large;
 	font-weight: bolder;
-	color: black;
+	color: white;
+	-webkit-text-stroke: 1px black;
 }
 
 .power{
@@ -153,7 +154,7 @@
 	left: 50%;
 }
 
-.coinsSquare{
+.coinsBox{
 	position: absolute;
 	top: 100%;
 	left: -1%;
